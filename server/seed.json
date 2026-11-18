@@ -1,0 +1,1062 @@
+{
+  "schemaVersion": 1,
+  "revision": 0,
+  "updatedAt": "2026-11-18T17:02:07.330Z",
+  "updatedBy": "admin",
+  "assets": [
+    {
+      "id": "loop-canvas-tote",
+      "url": "/images/loop-canvas-tote.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "loop-canvas-tote.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "loop-canvas-tote-detail",
+      "url": "/images/loop-canvas-tote-detail.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "loop-canvas-tote-detail.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "fold-zip-pouch",
+      "url": "/images/fold-zip-pouch.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "fold-zip-pouch.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "fold-zip-pouch-detail",
+      "url": "/images/fold-zip-pouch-detail.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "fold-zip-pouch-detail.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "dayline-notebook",
+      "url": "/images/dayline-notebook.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "dayline-notebook.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "dayline-notebook-detail",
+      "url": "/images/dayline-notebook-detail.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "dayline-notebook-detail.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "arc-desk-lamp",
+      "url": "/images/arc-desk-lamp.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "arc-desk-lamp.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "arc-desk-lamp-detail",
+      "url": "/images/arc-desk-lamp-detail.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "arc-desk-lamp-detail.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "still-stoneware-cup",
+      "url": "/images/still-stoneware-cup.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "still-stoneware-cup.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "still-stoneware-cup-detail",
+      "url": "/images/still-stoneware-cup-detail.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "still-stoneware-cup-detail.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "landing-catchall-tray",
+      "url": "/images/landing-catchall-tray.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "landing-catchall-tray.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "landing-catchall-tray-detail",
+      "url": "/images/landing-catchall-tray-detail.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "landing-catchall-tray-detail.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "roam-day-bottle",
+      "url": "/images/roam-day-bottle.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "roam-day-bottle.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "roam-day-bottle-detail",
+      "url": "/images/roam-day-bottle-detail.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "roam-day-bottle-detail.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "margin-pen-cup",
+      "url": "/images/margin-pen-cup.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "margin-pen-cup.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "margin-pen-cup-detail",
+      "url": "/images/margin-pen-cup-detail.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "margin-pen-cup-detail.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "softline-cotton-scarf",
+      "url": "/images/softline-cotton-scarf.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "softline-cotton-scarf.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "softline-cotton-scarf-detail",
+      "url": "/images/softline-cotton-scarf-detail.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "softline-cotton-scarf-detail.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "pocket-card-fold",
+      "url": "/images/pocket-card-fold.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "pocket-card-fold.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "pocket-card-fold-detail",
+      "url": "/images/pocket-card-fold-detail.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "pocket-card-fold-detail.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "tidy-cable-pair",
+      "url": "/images/tidy-cable-pair.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "tidy-cable-pair.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "tidy-cable-pair-detail",
+      "url": "/images/tidy-cable-pair-detail.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "tidy-cable-pair-detail.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "pause-table-clock",
+      "url": "/images/pause-table-clock.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "pause-table-clock.svg",
+      "uploadedAt": ""
+    },
+    {
+      "id": "pause-table-clock-detail",
+      "url": "/images/pause-table-clock-detail.svg",
+      "kind": "local",
+      "type": "image/svg+xml",
+      "size": 0,
+      "name": "pause-table-clock-detail.svg",
+      "uploadedAt": ""
+    }
+  ],
+  "products": [
+    {
+      "id": "loop-canvas-tote",
+      "name": "Loop canvas tote",
+      "price": 1290,
+      "compareAtPrice": 1590,
+      "category": "carry",
+      "description": "An everyday tote with wide handles and an inside pocket.",
+      "images": [
+        {
+          "assetId": "loop-canvas-tote",
+          "alt": "Loop canvas tote"
+        },
+        {
+          "assetId": "loop-canvas-tote-detail",
+          "alt": "Loop canvas tote"
+        }
+      ],
+      "variants": [
+        {
+          "id": "oat",
+          "label": "Oat",
+          "colour": "#cbbfa7",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        },
+        {
+          "id": "ink",
+          "label": "Ink",
+          "colour": "#333a3a",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        }
+      ],
+      "stockStatus": "in-stock",
+      "rating": {
+        "value": null,
+        "count": 0,
+        "placeholder": true
+      },
+      "featured": true,
+      "newArrival": false,
+      "releaseOrder": 12,
+      "details": [
+        {
+          "label": "material",
+          "value": "Canvas"
+        },
+        {
+          "label": "dimensions",
+          "value": "36 × 38 × 10 cm"
+        }
+      ],
+      "slug": "loop-canvas-tote",
+      "currency": "INR",
+      "stockQuantity": null,
+      "sku": "",
+      "tags": [],
+      "fullDescription": "An everyday tote with wide handles and an inside pocket.",
+      "deliveryChargeOverride": null,
+      "deliveryEstimateOverride": "",
+      "returnPolicyOverride": "",
+      "seoTitle": "",
+      "metaDescription": "",
+      "status": "published"
+    },
+    {
+      "id": "fold-zip-pouch",
+      "name": "Fold zip pouch",
+      "price": 590,
+      "category": "carry",
+      "description": "A zip pouch for cables, keys and small essentials.",
+      "images": [
+        {
+          "assetId": "fold-zip-pouch",
+          "alt": "Fold zip pouch"
+        },
+        {
+          "assetId": "fold-zip-pouch-detail",
+          "alt": "Fold zip pouch"
+        }
+      ],
+      "variants": [
+        {
+          "id": "clay",
+          "label": "Clay",
+          "colour": "#ad6248",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        },
+        {
+          "id": "ink",
+          "label": "Ink",
+          "colour": "#333a3a",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        }
+      ],
+      "stockStatus": "in-stock",
+      "rating": {
+        "value": null,
+        "count": 0,
+        "placeholder": true
+      },
+      "featured": false,
+      "newArrival": true,
+      "releaseOrder": 31,
+      "details": [
+        {
+          "label": "material",
+          "value": "Woven fabric"
+        },
+        {
+          "label": "dimensions",
+          "value": "20 × 13 × 5 cm"
+        }
+      ],
+      "slug": "fold-zip-pouch",
+      "compareAtPrice": null,
+      "currency": "INR",
+      "stockQuantity": null,
+      "sku": "",
+      "tags": [],
+      "fullDescription": "A zip pouch for cables, keys and small essentials.",
+      "deliveryChargeOverride": null,
+      "deliveryEstimateOverride": "",
+      "returnPolicyOverride": "",
+      "seoTitle": "",
+      "metaDescription": "",
+      "status": "published"
+    },
+    {
+      "id": "dayline-notebook",
+      "name": "Dayline notebook",
+      "price": 390,
+      "category": "desk",
+      "description": "A ruled notebook for notes, lists and daily plans.",
+      "images": [
+        {
+          "assetId": "dayline-notebook",
+          "alt": "Dayline notebook"
+        },
+        {
+          "assetId": "dayline-notebook-detail",
+          "alt": "Dayline notebook"
+        }
+      ],
+      "variants": [
+        {
+          "id": "clay",
+          "label": "Clay",
+          "colour": "#ad6248",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        },
+        {
+          "id": "moss",
+          "label": "Moss",
+          "colour": "#6e785c",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        }
+      ],
+      "stockStatus": "in-stock",
+      "rating": {
+        "value": null,
+        "count": 0,
+        "placeholder": true
+      },
+      "featured": false,
+      "newArrival": false,
+      "releaseOrder": 10,
+      "details": [
+        {
+          "label": "size",
+          "value": "A5"
+        },
+        {
+          "label": "pages",
+          "value": "120"
+        }
+      ],
+      "slug": "dayline-notebook",
+      "compareAtPrice": null,
+      "currency": "INR",
+      "stockQuantity": null,
+      "sku": "",
+      "tags": [],
+      "fullDescription": "A ruled notebook for notes, lists and daily plans.",
+      "deliveryChargeOverride": null,
+      "deliveryEstimateOverride": "",
+      "returnPolicyOverride": "",
+      "seoTitle": "",
+      "metaDescription": "",
+      "status": "published"
+    },
+    {
+      "id": "arc-desk-lamp",
+      "name": "Arc desk lamp",
+      "price": 2490,
+      "compareAtPrice": 2890,
+      "category": "desk",
+      "description": "A compact desk lamp with a curved shade and round base.",
+      "images": [
+        {
+          "assetId": "arc-desk-lamp",
+          "alt": "Arc desk lamp"
+        },
+        {
+          "assetId": "arc-desk-lamp-detail",
+          "alt": "Arc desk lamp"
+        }
+      ],
+      "variants": [
+        {
+          "id": "chalk",
+          "label": "Chalk",
+          "colour": "#e1dfd4",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        },
+        {
+          "id": "moss",
+          "label": "Moss",
+          "colour": "#6e785c",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        }
+      ],
+      "stockStatus": "in-stock",
+      "rating": {
+        "value": null,
+        "count": 0,
+        "placeholder": true
+      },
+      "featured": true,
+      "newArrival": false,
+      "releaseOrder": 9,
+      "details": [
+        {
+          "label": "height",
+          "value": "34 cm"
+        }
+      ],
+      "slug": "arc-desk-lamp",
+      "currency": "INR",
+      "stockQuantity": null,
+      "sku": "",
+      "tags": [],
+      "fullDescription": "A compact desk lamp with a curved shade and round base.",
+      "deliveryChargeOverride": null,
+      "deliveryEstimateOverride": "",
+      "returnPolicyOverride": "",
+      "seoTitle": "",
+      "metaDescription": "",
+      "status": "published"
+    },
+    {
+      "id": "still-stoneware-cup",
+      "name": "Still stoneware cup",
+      "price": 790,
+      "category": "home",
+      "description": "A rounded cup with an easy-to-hold handle.",
+      "images": [
+        {
+          "assetId": "still-stoneware-cup",
+          "alt": "Still stoneware cup"
+        },
+        {
+          "assetId": "still-stoneware-cup-detail",
+          "alt": "Still stoneware cup"
+        }
+      ],
+      "variants": [
+        {
+          "id": "chalk",
+          "label": "Chalk",
+          "colour": "#e1dfd4",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        },
+        {
+          "id": "clay",
+          "label": "Clay",
+          "colour": "#ad6248",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        }
+      ],
+      "stockStatus": "in-stock",
+      "rating": {
+        "value": null,
+        "count": 0,
+        "placeholder": true
+      },
+      "featured": true,
+      "newArrival": false,
+      "releaseOrder": 8,
+      "details": [
+        {
+          "label": "material",
+          "value": "Ceramic"
+        },
+        {
+          "label": "capacity",
+          "value": "280 ml"
+        }
+      ],
+      "slug": "still-stoneware-cup",
+      "compareAtPrice": null,
+      "currency": "INR",
+      "stockQuantity": null,
+      "sku": "",
+      "tags": [],
+      "fullDescription": "A rounded cup with an easy-to-hold handle.",
+      "deliveryChargeOverride": null,
+      "deliveryEstimateOverride": "",
+      "returnPolicyOverride": "",
+      "seoTitle": "",
+      "metaDescription": "",
+      "status": "published"
+    },
+    {
+      "id": "landing-catchall-tray",
+      "name": "Landing catchall tray",
+      "price": 690,
+      "category": "home",
+      "description": "A shallow tray for keys, cards and everyday bits.",
+      "images": [
+        {
+          "assetId": "landing-catchall-tray",
+          "alt": "Landing catchall tray"
+        },
+        {
+          "assetId": "landing-catchall-tray-detail",
+          "alt": "Landing catchall tray"
+        }
+      ],
+      "variants": [
+        {
+          "id": "sand",
+          "label": "Sand",
+          "colour": "#c8b59b",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        },
+        {
+          "id": "moss",
+          "label": "Moss",
+          "colour": "#6e785c",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        }
+      ],
+      "stockStatus": "in-stock",
+      "rating": {
+        "value": null,
+        "count": 0,
+        "placeholder": true
+      },
+      "featured": true,
+      "newArrival": false,
+      "releaseOrder": 7,
+      "details": [
+        {
+          "label": "dimensions",
+          "value": "22 × 14 × 2 cm"
+        }
+      ],
+      "slug": "landing-catchall-tray",
+      "compareAtPrice": null,
+      "currency": "INR",
+      "stockQuantity": null,
+      "sku": "",
+      "tags": [],
+      "fullDescription": "A shallow tray for keys, cards and everyday bits.",
+      "deliveryChargeOverride": null,
+      "deliveryEstimateOverride": "",
+      "returnPolicyOverride": "",
+      "seoTitle": "",
+      "metaDescription": "",
+      "status": "published"
+    },
+    {
+      "id": "roam-day-bottle",
+      "name": "Roam day bottle",
+      "price": 990,
+      "compareAtPrice": 1190,
+      "category": "carry",
+      "description": "A slim bottle with a loop cap for everyday carry.",
+      "images": [
+        {
+          "assetId": "roam-day-bottle",
+          "alt": "Roam day bottle"
+        },
+        {
+          "assetId": "roam-day-bottle-detail",
+          "alt": "Roam day bottle"
+        }
+      ],
+      "variants": [
+        {
+          "id": "moss",
+          "label": "Moss",
+          "colour": "#6e785c",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        },
+        {
+          "id": "ink",
+          "label": "Ink",
+          "colour": "#333a3a",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        }
+      ],
+      "stockStatus": "in-stock",
+      "rating": {
+        "value": null,
+        "count": 0,
+        "placeholder": true
+      },
+      "featured": false,
+      "newArrival": true,
+      "releaseOrder": 36,
+      "details": [
+        {
+          "label": "capacity",
+          "value": "600 ml"
+        }
+      ],
+      "slug": "roam-day-bottle",
+      "currency": "INR",
+      "stockQuantity": null,
+      "sku": "",
+      "tags": [],
+      "fullDescription": "A slim bottle with a loop cap for everyday carry.",
+      "deliveryChargeOverride": null,
+      "deliveryEstimateOverride": "",
+      "returnPolicyOverride": "",
+      "seoTitle": "",
+      "metaDescription": "",
+      "status": "published"
+    },
+    {
+      "id": "margin-pen-cup",
+      "name": "Margin pen cup",
+      "price": 490,
+      "category": "desk",
+      "description": "A compact holder for pens and desk tools.",
+      "images": [
+        {
+          "assetId": "margin-pen-cup",
+          "alt": "Margin pen cup"
+        },
+        {
+          "assetId": "margin-pen-cup-detail",
+          "alt": "Margin pen cup"
+        }
+      ],
+      "variants": [
+        {
+          "id": "moss",
+          "label": "Moss",
+          "colour": "#6e785c",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        },
+        {
+          "id": "clay",
+          "label": "Clay",
+          "colour": "#ad6248",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        }
+      ],
+      "stockStatus": "in-stock",
+      "rating": {
+        "value": null,
+        "count": 0,
+        "placeholder": true
+      },
+      "featured": false,
+      "newArrival": false,
+      "releaseOrder": 5,
+      "details": [
+        {
+          "label": "height",
+          "value": "10 cm"
+        }
+      ],
+      "slug": "margin-pen-cup",
+      "compareAtPrice": null,
+      "currency": "INR",
+      "stockQuantity": null,
+      "sku": "",
+      "tags": [],
+      "fullDescription": "A compact holder for pens and desk tools.",
+      "deliveryChargeOverride": null,
+      "deliveryEstimateOverride": "",
+      "returnPolicyOverride": "",
+      "seoTitle": "",
+      "metaDescription": "",
+      "status": "published"
+    },
+    {
+      "id": "softline-cotton-scarf",
+      "name": "Softline cotton scarf",
+      "price": 890,
+      "category": "wear",
+      "description": "A lightweight scarf with woven lines and a fringed edge.",
+      "images": [
+        {
+          "assetId": "softline-cotton-scarf",
+          "alt": "Softline cotton scarf"
+        },
+        {
+          "assetId": "softline-cotton-scarf-detail",
+          "alt": "Softline cotton scarf"
+        }
+      ],
+      "variants": [
+        {
+          "id": "oat",
+          "label": "Oat",
+          "colour": "#cbbfa7",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        },
+        {
+          "id": "clay",
+          "label": "Clay",
+          "colour": "#ad6248",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        }
+      ],
+      "stockStatus": "in-stock",
+      "rating": {
+        "value": null,
+        "count": 0,
+        "placeholder": true
+      },
+      "featured": false,
+      "newArrival": true,
+      "releaseOrder": 38,
+      "details": [
+        {
+          "label": "material",
+          "value": "Cotton"
+        },
+        {
+          "label": "dimensions",
+          "value": "170 × 50 cm"
+        }
+      ],
+      "slug": "softline-cotton-scarf",
+      "compareAtPrice": null,
+      "currency": "INR",
+      "stockQuantity": null,
+      "sku": "",
+      "tags": [],
+      "fullDescription": "A lightweight scarf with woven lines and a fringed edge.",
+      "deliveryChargeOverride": null,
+      "deliveryEstimateOverride": "",
+      "returnPolicyOverride": "",
+      "seoTitle": "",
+      "metaDescription": "",
+      "status": "published"
+    },
+    {
+      "id": "pocket-card-fold",
+      "name": "Pocket card fold",
+      "price": 790,
+      "category": "wear",
+      "description": "A slim card holder with a front pocket.",
+      "images": [
+        {
+          "assetId": "pocket-card-fold",
+          "alt": "Pocket card fold"
+        },
+        {
+          "assetId": "pocket-card-fold-detail",
+          "alt": "Pocket card fold"
+        }
+      ],
+      "variants": [
+        {
+          "id": "clay",
+          "label": "Clay",
+          "colour": "#ad6248",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        },
+        {
+          "id": "ink",
+          "label": "Ink",
+          "colour": "#333a3a",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        }
+      ],
+      "stockStatus": "in-stock",
+      "rating": {
+        "value": null,
+        "count": 0,
+        "placeholder": true
+      },
+      "featured": false,
+      "newArrival": true,
+      "releaseOrder": 39,
+      "details": [
+        {
+          "label": "dimensions",
+          "value": "10 × 7 cm"
+        }
+      ],
+      "slug": "pocket-card-fold",
+      "compareAtPrice": null,
+      "currency": "INR",
+      "stockQuantity": null,
+      "sku": "",
+      "tags": [],
+      "fullDescription": "A slim card holder with a front pocket.",
+      "deliveryChargeOverride": null,
+      "deliveryEstimateOverride": "",
+      "returnPolicyOverride": "",
+      "seoTitle": "",
+      "metaDescription": "",
+      "status": "published"
+    },
+    {
+      "id": "tidy-cable-pair",
+      "name": "Tidy cable pair",
+      "price": 290,
+      "category": "desk",
+      "description": "Two wraps to keep charging cables together.",
+      "images": [
+        {
+          "assetId": "tidy-cable-pair",
+          "alt": "Tidy cable pair"
+        },
+        {
+          "assetId": "tidy-cable-pair-detail",
+          "alt": "Tidy cable pair"
+        }
+      ],
+      "variants": [
+        {
+          "id": "clay",
+          "label": "Clay",
+          "colour": "#ad6248",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        },
+        {
+          "id": "moss",
+          "label": "Moss",
+          "colour": "#6e785c",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        }
+      ],
+      "stockStatus": "in-stock",
+      "rating": {
+        "value": null,
+        "count": 0,
+        "placeholder": true
+      },
+      "featured": false,
+      "newArrival": false,
+      "releaseOrder": 2,
+      "details": [
+        {
+          "label": "dimensions",
+          "value": "12 cm each"
+        }
+      ],
+      "slug": "tidy-cable-pair",
+      "compareAtPrice": null,
+      "currency": "INR",
+      "stockQuantity": null,
+      "sku": "",
+      "tags": [],
+      "fullDescription": "Two wraps to keep charging cables together.",
+      "deliveryChargeOverride": null,
+      "deliveryEstimateOverride": "",
+      "returnPolicyOverride": "",
+      "seoTitle": "",
+      "metaDescription": "",
+      "status": "published"
+    },
+    {
+      "id": "pause-table-clock",
+      "name": "Pause table clock",
+      "price": 1490,
+      "category": "home",
+      "description": "A small table clock with a simple face and rounded frame.",
+      "images": [
+        {
+          "assetId": "pause-table-clock",
+          "alt": "Pause table clock"
+        },
+        {
+          "assetId": "pause-table-clock-detail",
+          "alt": "Pause table clock"
+        }
+      ],
+      "variants": [
+        {
+          "id": "chalk",
+          "label": "Chalk",
+          "colour": "#e1dfd4",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        },
+        {
+          "id": "moss",
+          "label": "Moss",
+          "colour": "#6e785c",
+          "size": "",
+          "sku": "",
+          "stockQuantity": null
+        }
+      ],
+      "stockStatus": "out-of-stock",
+      "rating": {
+        "value": null,
+        "count": 0,
+        "placeholder": true
+      },
+      "featured": false,
+      "newArrival": false,
+      "releaseOrder": 1,
+      "details": [
+        {
+          "label": "dimensions",
+          "value": "12 × 12 × 4 cm"
+        }
+      ],
+      "slug": "pause-table-clock",
+      "compareAtPrice": null,
+      "currency": "INR",
+      "stockQuantity": null,
+      "sku": "",
+      "tags": [],
+      "fullDescription": "A small table clock with a simple face and rounded frame.",
+      "deliveryChargeOverride": null,
+      "deliveryEstimateOverride": "",
+      "returnPolicyOverride": "",
+      "seoTitle": "",
+      "metaDescription": "",
+      "status": "published"
+    }
+  ],
+  "categories": [
+    {
+      "id": "carry",
+      "slug": "carry",
+      "name": "Carry",
+      "description": "",
+      "imageAssetId": "",
+      "sortOrder": 0,
+      "active": true,
+      "archived": false
+    },
+    {
+      "id": "desk",
+      "slug": "desk",
+      "name": "Desk",
+      "description": "",
+      "imageAssetId": "",
+      "sortOrder": 1,
+      "active": true,
+      "archived": false
+    },
+    {
+      "id": "home",
+      "slug": "home",
+      "name": "Home",
+      "description": "",
+      "imageAssetId": "",
+      "sortOrder": 2,
+      "active": true,
+      "archived": false
+    },
+    {
+      "id": "wear",
+      "slug": "wear",
+      "name": "Wear",
+      "description": "",
+      "imageAssetId": "",
+      "sortOrder": 3,
+      "active": true,
+      "archived": false
+    }
+  ],
+  "deliveryRegions": [],
+  "settings": {
+    "storeName": "GO 72",
+    "logoAssetId": "",
+    "supportEmail": "",
+    "announcement": "",
+    "heroHeading": "Everyday\nessentials",
+    "heroText": "Shop bags, desk accessories and home essentials.",
+    "socialLinks": [],
+    "defaultCurrency": "INR",
+    "defaultDeliveryRegionId": "",
+    "defaultDeliveryCharge": null,
+    "defaultDeliveryEstimate": "",
+    "returnPolicy": ""
+  },
+  "_security": {
+    "attempts": {}
+  }
+}
