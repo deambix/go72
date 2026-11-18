@@ -26,7 +26,7 @@ test("CMS APIs: authentication, lockout, products, categories, uploads, delivery
  const original=await (await call("/api/admin/backup")).json();const c={id:"cms-test-category",slug:"cms-test-category",name:"Test category",description:"Test fixture only",imageAssetId:"",sortOrder:9,active:true,archived:false};
  assert.equal((await call("/api/admin/categories",{body:{action:"save",category:c}})).status,200);
  const p={...structuredClone((await state()).products[0]),id:"cms-test-product",slug:"cms-test-product",category:c.id,name:"CMS test product",status:"draft",fullDescription:"Full description test",tags:["cms-test"],seoTitle:"Test title",metaDescription:"Test metadata",deliveryChargeOverride:30,deliveryEstimateOverride:"Test estimate",returnPolicyOverride:"Test policy"};
- assert.equal((await call("/api/admin/products",{body:{action:"save",product:p}})).status,200);assert(!(await content()).products.some(v=>v.id===p.id));
+ assert.equal((await call("/api/admin/products",{body:{action:"save",product:p}})).status,200);assert(!(await content()).products.some(v=>v.id===p.id));const leaked={...p,description:key};assert.equal((await call("/api/admin/products",{body:{action:"save",product:leaked}})).status,400);assert(!(await content()).products.some(v=>v.description===key));
  assert.equal((await call("/api/admin/products",{body:{action:"publish",ids:[p.id]}})).status,400);
  assert.equal((await call("/api/admin/products",{body:{action:"publish",ids:[p.id],confirm:"publish"}})).status,200);assert((await content()).products.some(v=>v.id===p.id));
  p.status="published";p.price=1400;assert.equal((await call("/api/admin/products",{body:{action:"save",product:p}})).status,200);assert.equal((await content()).products.find(v=>v.id===p.id).price,1400);

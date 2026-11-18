@@ -65,7 +65,7 @@ The page keeps the entered key only in memory, sends it in x-go72-admin-key, cle
 
 The admin manages product creation/editing/duplication, drafts/publication, bulk publish/unpublish, archival/deletion, category relationships, ordered images/alt text, variants, SKU/stock, pricing/currency, descriptions/tags, delivery and return overrides, SEO fields, featured/new-arrival flags, categories, delivery regions and site settings. Image/logo selection uses uploaded or existing approved assets instead of arbitrary external image URLs. Category deletion requires reassignment/removal of referencing products.
 
-Each write requires the key and the current content revision. Publication/unpublication, deletion, archival and restoration actions require explicit confirmation. Conflicts are rejected; reload before applying the edit again. Errors do not return internal paths, traces or secret values.
+Each write requires the key and the current content revision. Publication/unpublication, deletion, archival and restoration actions require explicit confirmation. Conflicts are rejected; reload before applying the edit again. Errors do not return internal paths, traces or secret values. Content containing a configured publishing key or Blob token is rejected before persistence. The cloud build check uses generated test-only credentials to verify that server variables are absent from public build output; it does not create live secrets.
 
 ## JSON schema and persistence
 
