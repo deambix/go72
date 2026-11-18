@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+.vercel/
+coverage/
+playwright-report/
+test-results/
+quality/
+*.log
+.DS_Store
+Thumbs.db
