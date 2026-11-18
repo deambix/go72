@@ -1,0 +1,49 @@
+name: GO 72 quality
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: go72-quality
+  cancel-in-progress: true
+jobs:
+  storefront:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check JavaScript syntax
+        run: |
+          git ls-files "*.js" "*.cjs" | while IFS= read -r file; do node --check "$file" || exit 1; done
+      - name: Install build dependencies
+        run: npm install --no-audit --no-fund
+      - name: Production build
+        run: npm run build
+      - name: Audit source and build
+        run: node scripts/audit.cjs
+      - name: Install cloud-only browser checks
+        run: npm install --no-save --package-lock=false @playwright/test@1.56.1 axe-core@4.10.3
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Verify storefront
+        run: npm run check
+      - name: Upload quality report and screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: go72-quality
+          path: quality/
+          if-no-files-found: ignore
+          retention-days: 14
+      - name: Upload Vercel-ready build
+        uses: actions/upload-artifact@v4
+        with:
+          name: go72-dist
+          path: dist/
+          retention-days: 14
