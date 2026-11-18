@@ -1,6 +1,6 @@
 import { copy, categories, siteSettings } from "../content.js";
 export const h = value => String(value ?? "").replace(/[&<>"\x27]/g, char => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","\x27":"&#39;"}[char]));
-export const money = (value,currency=siteSettings.defaultCurrency||"INR") => new Intl.NumberFormat("en-IN",{style:"currency",currency,maximumFractionDigits:0}).format(value);
+export const money = (value,currency=siteSettings.defaultCurrency||"INR") => new Intl.NumberFormat("en-IN",{style:"currency",currency,minimumFractionDigits:Number.isInteger(value)?0:undefined}).format(value);
 export const categoryName = id => categories.find(category => category.id === id)?.name ?? copy.all;
 const paths = {search:'<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>',cart:'<path d="M5 7h14l1 14H4zM9 8V6a3 3 0 0 1 6 0v2"/>',home:'<path d="m3 10 9-7 9 7v11h-6v-7H9v7H3z"/>',account:'<circle cx="12" cy="7" r="4"/><path d="M4 21v-2a8 8 0 0 1 16 0v2"/>',arrow:'<path d="M4 12h16m-6-6 6 6-6 6"/>',minus:'<path d="M5 12h14"/>',plus:'<path d="M5 12h14M12 5v14"/>',close:'<path d="m5 5 14 14M5 19 19 5"/>',check:'<path d="m4 12 5 5L20 6"/>'};
 export const icon = name => '<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">'+(paths[name] ?? paths.arrow)+'</svg>';
