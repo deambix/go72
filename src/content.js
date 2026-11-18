@@ -159,3 +159,7 @@ export const copy = {
   "pages": "Pages"
 };
 export const categories = [{id:"all",name:copy.all},{id:"carry",name:copy.categoryCarry},{id:"desk",name:copy.categoryDesk},{id:"home",name:copy.categoryHome},{id:"wear",name:copy.categoryWear}];
+
+export const siteSettings = {storeName:"GO 72",defaultCurrency:"INR",defaultDeliveryCharge:null,defaultDeliveryEstimate:"",defaultDeliveryRegionId:"",returnPolicy:""};
+export const deliveryRegions=[];
+export function applyContent(data){Object.assign(siteSettings,data.settings);deliveryRegions.splice(0,deliveryRegions.length,...data.deliveryRegions);categories.splice(1,categories.length-1,...data.categories.map(c=>({id:c.id,slug:c.slug,name:c.name})));copy.brand=siteSettings.storeName;copy.heroTitle=siteSettings.heroHeading;copy.heroBody=siteSettings.heroText;}

@@ -4,7 +4,7 @@
   "framework": "vite",
   "rewrites": [
     {
-      "source": "/((?!assets/|images/|icons/|data/|sw.js|manifest.webmanifest|offline.html|favicon.svg).*)",
+      "source": "/((?!api/|assets/|images/|icons/|data/|sw.js|manifest.webmanifest|offline.html|favicon.svg).*)",
       "destination": "/index.html"
     }
   ],
@@ -34,6 +34,24 @@
           "value": "no-cache"
         }
       ]
+    },
+    {
+      "source": "/admin",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, noarchive"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "no-store"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "no-referrer"
+        }
+      ]
     }
-  ]
+  ],
+  "installCommand": "npm ci"
 }
