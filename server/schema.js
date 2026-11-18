@@ -14,7 +14,7 @@ const unique = (items,key) => { if(new Set(items.map(x=>x[key])).size!==items.le
 const status = v => { if(!["draft","published","archived"].includes(v)) fail(); return v; };
 const httpUrl = v => {const s=text(v,2000);if(!s)return "";let u;try{u=new URL(s);}catch{fail();}if(u.protocol!=="https:"||u.username||u.password)fail();return u.href;};
 export function validateDocument(input) {
- safe(input);if(!plain(input)||JSON.stringify(input).length>MAX_DOCUMENT_BYTES)fail();
+ safe(input);if(!plain(input)||Buffer.byteLength(JSON.stringify(input))>MAX_DOCUMENT_BYTES)fail();
  const assets=list(input.assets,3000).map(a=>{const id=slug(a.id);const url=text(a.url,2000,true);if(a.kind==="local"){if(!/^\/(?:images\/[a-z0-9-]+\.svg|favicon\.svg)$/.test(url))fail();}else if(a.kind==="blob"){const u=new URL(url);if(u.protocol!=="https:"||u.username||u.password||!u.hostname.endsWith(".private.blob.vercel-storage.com")||!/^\/images\/[a-z0-9-]+\.(png|jpg|webp)$/.test(u.pathname))fail();}else fail();return {id,url,kind:a.kind,type:text(a.type,40,true),size:integer(a.size,3*1024*1024),name:text(a.name,150),uploadedAt:text(a.uploadedAt,40)};});unique(assets,"id");
  const assetIds=new Set(assets.map(a=>a.id));
  const assetId=v=>{if(v==="")return "";const id=slug(v);if(!assetIds.has(id))fail();return id;};
