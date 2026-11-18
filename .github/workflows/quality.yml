@@ -22,7 +22,7 @@ jobs:
         run: |
           git ls-files "*.js" "*.cjs" | while IFS= read -r file; do node --check "$file" || exit 1; done
       - name: Install build dependencies
-        run: npm install --no-audit --no-fund
+        run: npm ci --no-audit --no-fund
       - name: Production build
         run: npm run build
       - name: Audit source and build
