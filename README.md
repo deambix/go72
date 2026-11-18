@@ -104,3 +104,11 @@ Anything beyond the frontend/PWA scope requires agreement before implementation.
 ## License
 
 MIT — see [LICENSE](LICENSE). Original code and placeholder illustrations are included. The license does not grant trademark rights or imply ownership of the client business.
+
+## Verification result
+
+The application at commit 1bf1e8f80bb8856cb45c834fe27cde08ba5d2bac passed the [cloud quality run](https://github.com/deambix/go72/actions/runs/44331109318). Production build, source/credential checks, functional behavior, 24 layout checks and eight automated accessibility checks passed. Mobile and desktop screenshots were visually reviewed. The JSON report and screenshots are available in the run’s go72-quality artifact; the deployable build is in go72-dist. Vercel has not been deployed by the developer.
+
+### Known development-tool advisory
+
+The current Vite dependency tree includes picomatch 4.0.7, affected by [GHSA-fc5q-39xc-vjpf](https://github.com/advisories/GHSA-fc5q-39xc-vjpf), a high-severity regular-expression denial-of-service issue in glob-pattern processing. npm propagates it through dependent build tools. The upstream advisory lists no patched version as of verification. This dependency belongs to development/build tooling and is not in the shipped storefront JavaScript. Keep cloud development ports private and update the toolchain when an upstream fix is released. This advisory is separate from the successful functional and accessibility checks.
