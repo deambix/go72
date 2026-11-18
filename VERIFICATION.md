@@ -1,23 +1,21 @@
 # GO 72 verification
 
-Tested application commit: 1bf1e8f80bb8856cb45c834fe27cde08ba5d2bac
+Tested interface commit: 0feaaab683e9c9d6e95c5727584a3865e136f8da
 
-Cloud runner: GitHub Actions, Ubuntu 24.04, Node.js 22, Vite 8.3.8, Playwright 1.65.1, axe-core 4.14.1.
+Cloud quality run: https://github.com/deambix/go72/actions/runs/44340702627
 
-Run: https://github.com/deambix/go72/actions/runs/44331109318
+- Production build and source/credential checks passed.
+- All nine functional test groups passed with no browser JavaScript errors.
+- All 24 layout checks passed at 360, 390, 414, 1280 and 1440px.
+- Eight basic accessibility checks reported no violations.
+- Cart, filtering, search, variants, checkout preview, account placeholders, 404, storage recovery and offline/PWA behavior passed.
+- Mobile and desktop layouts were visually reviewed from cloud screenshots.
+- Numbered editorial labels, long product commentary and repeated prototype notices were removed. A short footer/checkout preview notice remains because ordering is not enabled.
 
-- Production build and source/credential audit passed.
-- Nine functional verification groups passed; no browser JavaScript errors.
-- 24 layout checks passed with no horizontal overflow.
-- Widths: 360, 390, 414, 1280 and 1440px.
-- Eight screens passed basic automated WCAG A/AA checks with zero reported violations.
-- Manifest/icons, production worker registration, offline app shell and sensitive-route cache exclusion passed.
-- Cart quantities, variants, totals, persistence, removal and malformed storage recovery passed.
-- Checkout uses read-only sample details; no order/payment is submitted. Account screens collect no credentials. Browser cookies: zero.
-- Main home, catalogue, product, cart, checkout and offline screenshots were visually reviewed from cloud artifacts, without saving them locally.
+The hosting configuration separately excludes /data/ from SPA rewrites so product JSON can be served directly on Vercel.
 
-Quality artifact: https://github.com/deambix/go72/actions/runs/44331109318/artifacts/14439362023
+Vercel status: credential authentication succeeded, but project creation was denied with 403 in both personal and default-team contexts. No Vercel project or deployment was created. Deployment can resume when project/deployment permissions are available, or an accessible go72 project is created.
 
-Build artifact: https://github.com/deambix/go72/actions/runs/44331109318/artifacts/14438543997
+Quality artifact: https://github.com/deambix/go72/actions/runs/44340702627/artifacts/14444870511
 
-Artifacts expire after 14 days. The workflow reproduces these outputs. See the README for the known unpatched picomatch development-tool advisory, environment handling and Vercel preview setup. No Vercel deployment or custom domain was created.
+See README for commands, deployment steps and the existing development-tool dependency advisory. No project files or credentials were saved to the developer laptop.

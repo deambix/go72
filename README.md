@@ -1,6 +1,6 @@
 # GO 72
 
-An original mobile-first lifestyle storefront and PWA shell, built with Vite, vanilla JavaScript, HTML and CSS. White base, near-black type, restrained clay accent, editorial proportions and locally authored SVG illustrations.
+A mobile-first lifestyle storefront and PWA shell built with Vite, vanilla JavaScript, HTML and CSS. A white interface, clay accent, concise shopping copy and original SVG product illustrations.
 
 **Demo only:** the 12 products, INR prices, specifications, stock labels and ratings are placeholders. No real orders, payments, inventory, suppliers, databases or authentication are connected. No analytics, ads, tracking, cookies or customer-data collection. Checkout uses read-only sample information.
 
@@ -21,7 +21,7 @@ If the lockfile is not yet present, use npm install first. Forward the Vite port
 
 | Route | Behavior |
 | --- | --- |
-| / | Hero, categories, featured products, new arrivals, editorial spotlight, support information |
+| / | Shop by category, featured products, new arrivals and a desk-accessories banner |
 | /catalogue, /search | Live search, category filters, sorting, skeletons, empty state; URL query parameters preserve the view |
 | /product/:id | Gallery, sample prices, colours, quantity, sticky mobile Add to Cart, related products |
 | /cart | Variant-aware merging, quantities, removal, subtotal, shipping placeholder |
@@ -71,7 +71,7 @@ Make small descriptive commits, run the quality workflow, and push to GitHub. Pr
 
 ## Vercel preview handoff
 
-The repository owner will set up Vercel. vercel.json defines Vite, npm run build, dist output, client-router rewrites and non-cached service-worker headers. No application secrets are required.
+Vercel preview setup was requested. The supplied credential authenticates, but the API denied project creation (403) in both the personal and default-team contexts. Project creation or a credential with the necessary project/deployment permissions is required before deployment can continue. vercel.json defines Vite, npm run build, dist output, client-router rewrites and non-cached service-worker headers. No application secrets are required.
 
 For a preview-first setup from a temporary/cloud checkout, sign in to Vercel and run:
 
@@ -107,7 +107,7 @@ MIT — see [LICENSE](LICENSE). Original code and placeholder illustrations are 
 
 ## Verification result
 
-The application at commit 1bf1e8f80bb8856cb45c834fe27cde08ba5d2bac passed the [cloud quality run](https://github.com/deambix/go72/actions/runs/44331109318). Production build, source/credential checks, functional behavior, 24 layout checks and eight automated accessibility checks passed. Mobile and desktop screenshots were visually reviewed. The JSON report and screenshots are available in the run’s go72-quality artifact; the deployable build is in go72-dist. Vercel has not been deployed by the developer.
+The updated shopping interface at commit 0feaaab683e9c9d6e95c5727584a3865e136f8da passed the [cloud quality run](https://github.com/deambix/go72/actions/runs/44340702627). Production build, source/credential checks, functional behavior, 24 layout checks and eight automated accessibility checks passed. Mobile and desktop screenshots were visually reviewed. The JSON report and screenshots are available in the run’s go72-quality artifact; the deployable build is in go72-dist. Vercel has not been deployed by the developer.
 
 ### Known development-tool advisory
 
