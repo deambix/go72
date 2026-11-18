@@ -1,0 +1,389 @@
+[
+  {
+    "id": "loop-canvas-tote",
+    "name": "Loop canvas tote",
+    "price": 1290,
+    "compareAtPrice": 1590,
+    "category": "carry",
+    "description": "A roomy, soft-sided tote with a broad strap and an inner pocket for the small things. Sample dimensions: 36 × 38 × 10 cm. Illustrative cotton canvas.",
+    "images": [
+      "/images/loop-canvas-tote.svg",
+      "/images/loop-canvas-tote-detail.svg"
+    ],
+    "variants": [
+      {
+        "id": "oat",
+        "label": "Oat",
+        "colour": "#cbbfa7"
+      },
+      {
+        "id": "ink",
+        "label": "Ink",
+        "colour": "#333a3a"
+      }
+    ],
+    "stockStatus": "in-stock",
+    "rating": {
+      "value": null,
+      "count": 0,
+      "placeholder": true
+    },
+    "featured": true,
+    "newArrival": false,
+    "releaseOrder": 12
+  },
+  {
+    "id": "fold-zip-pouch",
+    "name": "Fold zip pouch",
+    "price": 590,
+    "category": "carry",
+    "description": "A compact pouch for cables, keys and loose essentials. A flat base helps it sit neatly on a desk. Sample dimensions: 20 × 13 × 5 cm. Illustrative woven fabric.",
+    "images": [
+      "/images/fold-zip-pouch.svg",
+      "/images/fold-zip-pouch-detail.svg"
+    ],
+    "variants": [
+      {
+        "id": "clay",
+        "label": "Clay",
+        "colour": "#ad6248"
+      },
+      {
+        "id": "ink",
+        "label": "Ink",
+        "colour": "#333a3a"
+      }
+    ],
+    "stockStatus": "in-stock",
+    "rating": {
+      "value": null,
+      "count": 0,
+      "placeholder": true
+    },
+    "featured": false,
+    "newArrival": true,
+    "releaseOrder": 31
+  },
+  {
+    "id": "dayline-notebook",
+    "name": "Dayline notebook",
+    "price": 390,
+    "category": "desk",
+    "description": "A simple notebook with ruled pages and a soft cover. Leave it open for ideas, lists or the day’s first thought. Sample size: A5, 120 pages.",
+    "images": [
+      "/images/dayline-notebook.svg",
+      "/images/dayline-notebook-detail.svg"
+    ],
+    "variants": [
+      {
+        "id": "clay",
+        "label": "Clay",
+        "colour": "#ad6248"
+      },
+      {
+        "id": "moss",
+        "label": "Moss",
+        "colour": "#6e785c"
+      }
+    ],
+    "stockStatus": "in-stock",
+    "rating": {
+      "value": null,
+      "count": 0,
+      "placeholder": true
+    },
+    "featured": false,
+    "newArrival": false,
+    "releaseOrder": 10
+  },
+  {
+    "id": "arc-desk-lamp",
+    "name": "Arc desk lamp",
+    "price": 2490,
+    "compareAtPrice": 2890,
+    "category": "desk",
+    "description": "A curved shade and a compact base make a quiet corner of the desk. This is a visual concept; electrical specifications are not supplied. Sample height: 34 cm.",
+    "images": [
+      "/images/arc-desk-lamp.svg",
+      "/images/arc-desk-lamp-detail.svg"
+    ],
+    "variants": [
+      {
+        "id": "chalk",
+        "label": "Chalk",
+        "colour": "#e1dfd4"
+      },
+      {
+        "id": "moss",
+        "label": "Moss",
+        "colour": "#6e785c"
+      }
+    ],
+    "stockStatus": "in-stock",
+    "rating": {
+      "value": null,
+      "count": 0,
+      "placeholder": true
+    },
+    "featured": true,
+    "newArrival": false,
+    "releaseOrder": 9
+  },
+  {
+    "id": "still-stoneware-cup",
+    "name": "Still stoneware cup",
+    "price": 790,
+    "category": "home",
+    "description": "A low, rounded cup with an easy handle and a satin surface. Made for a moment at the kitchen table. Sample capacity: 280 ml. Illustrative ceramic.",
+    "images": [
+      "/images/still-stoneware-cup.svg",
+      "/images/still-stoneware-cup-detail.svg"
+    ],
+    "variants": [
+      {
+        "id": "chalk",
+        "label": "Chalk",
+        "colour": "#e1dfd4"
+      },
+      {
+        "id": "clay",
+        "label": "Clay",
+        "colour": "#ad6248"
+      }
+    ],
+    "stockStatus": "in-stock",
+    "rating": {
+      "value": null,
+      "count": 0,
+      "placeholder": true
+    },
+    "featured": true,
+    "newArrival": false,
+    "releaseOrder": 8
+  },
+  {
+    "id": "landing-catchall-tray",
+    "name": "Landing catchall tray",
+    "price": 690,
+    "category": "home",
+    "description": "A shallow tray that gives keys and everyday bits a landing place. Soft corners keep the shape understated. Sample dimensions: 22 × 14 × 2 cm. Illustrative composite.",
+    "images": [
+      "/images/landing-catchall-tray.svg",
+      "/images/landing-catchall-tray-detail.svg"
+    ],
+    "variants": [
+      {
+        "id": "sand",
+        "label": "Sand",
+        "colour": "#c8b59b"
+      },
+      {
+        "id": "moss",
+        "label": "Moss",
+        "colour": "#6e785c"
+      }
+    ],
+    "stockStatus": "in-stock",
+    "rating": {
+      "value": null,
+      "count": 0,
+      "placeholder": true
+    },
+    "featured": true,
+    "newArrival": false,
+    "releaseOrder": 7
+  },
+  {
+    "id": "roam-day-bottle",
+    "name": "Roam day bottle",
+    "price": 990,
+    "compareAtPrice": 1190,
+    "category": "carry",
+    "description": "A clean-lined bottle with a loop cap and an easy silhouette. A placeholder for daily carry. Sample capacity: 600 ml. Illustrative metal body; performance unverified.",
+    "images": [
+      "/images/roam-day-bottle.svg",
+      "/images/roam-day-bottle-detail.svg"
+    ],
+    "variants": [
+      {
+        "id": "moss",
+        "label": "Moss",
+        "colour": "#6e785c"
+      },
+      {
+        "id": "ink",
+        "label": "Ink",
+        "colour": "#333a3a"
+      }
+    ],
+    "stockStatus": "in-stock",
+    "rating": {
+      "value": null,
+      "count": 0,
+      "placeholder": true
+    },
+    "featured": false,
+    "newArrival": true,
+    "releaseOrder": 36
+  },
+  {
+    "id": "margin-pen-cup",
+    "name": "Margin pen cup",
+    "price": 490,
+    "category": "desk",
+    "description": "A small upright cylinder for the desk’s most-used tools. A weighted-looking base keeps the illustration grounded. Sample height: 10 cm. Illustrative powder-coated metal.",
+    "images": [
+      "/images/margin-pen-cup.svg",
+      "/images/margin-pen-cup-detail.svg"
+    ],
+    "variants": [
+      {
+        "id": "moss",
+        "label": "Moss",
+        "colour": "#6e785c"
+      },
+      {
+        "id": "clay",
+        "label": "Clay",
+        "colour": "#ad6248"
+      }
+    ],
+    "stockStatus": "in-stock",
+    "rating": {
+      "value": null,
+      "count": 0,
+      "placeholder": true
+    },
+    "featured": false,
+    "newArrival": false,
+    "releaseOrder": 5
+  },
+  {
+    "id": "softline-cotton-scarf",
+    "name": "Softline cotton scarf",
+    "price": 890,
+    "category": "wear",
+    "description": "A light scarf with a fine woven pattern and a simple fringe. Fold it into a bag for a change of pace. Sample dimensions: 170 × 50 cm. Illustrative cotton.",
+    "images": [
+      "/images/softline-cotton-scarf.svg",
+      "/images/softline-cotton-scarf-detail.svg"
+    ],
+    "variants": [
+      {
+        "id": "oat",
+        "label": "Oat",
+        "colour": "#cbbfa7"
+      },
+      {
+        "id": "clay",
+        "label": "Clay",
+        "colour": "#ad6248"
+      }
+    ],
+    "stockStatus": "in-stock",
+    "rating": {
+      "value": null,
+      "count": 0,
+      "placeholder": true
+    },
+    "featured": false,
+    "newArrival": true,
+    "releaseOrder": 38
+  },
+  {
+    "id": "pocket-card-fold",
+    "name": "Pocket card fold",
+    "price": 790,
+    "category": "wear",
+    "description": "A slim fold for a few cards and notes, with a curved opening on the front. Sample dimensions: 10 × 7 cm. Illustrative plant-based material; composition unverified.",
+    "images": [
+      "/images/pocket-card-fold.svg",
+      "/images/pocket-card-fold-detail.svg"
+    ],
+    "variants": [
+      {
+        "id": "clay",
+        "label": "Clay",
+        "colour": "#ad6248"
+      },
+      {
+        "id": "ink",
+        "label": "Ink",
+        "colour": "#333a3a"
+      }
+    ],
+    "stockStatus": "in-stock",
+    "rating": {
+      "value": null,
+      "count": 0,
+      "placeholder": true
+    },
+    "featured": false,
+    "newArrival": true,
+    "releaseOrder": 39
+  },
+  {
+    "id": "tidy-cable-pair",
+    "name": "Tidy cable pair",
+    "price": 290,
+    "category": "desk",
+    "description": "Two small wraps to gather charging cables between uses. A modest detail for a clearer workspace. Sample length: 12 cm each. Illustrative flexible material.",
+    "images": [
+      "/images/tidy-cable-pair.svg",
+      "/images/tidy-cable-pair-detail.svg"
+    ],
+    "variants": [
+      {
+        "id": "clay",
+        "label": "Clay",
+        "colour": "#ad6248"
+      },
+      {
+        "id": "moss",
+        "label": "Moss",
+        "colour": "#6e785c"
+      }
+    ],
+    "stockStatus": "in-stock",
+    "rating": {
+      "value": null,
+      "count": 0,
+      "placeholder": true
+    },
+    "featured": false,
+    "newArrival": false,
+    "releaseOrder": 2
+  },
+  {
+    "id": "pause-table-clock",
+    "name": "Pause table clock",
+    "price": 1490,
+    "category": "home",
+    "description": "A small clock face framed by a softly squared body. Keep the pace visible without a large display. Sample dimensions: 12 × 12 × 4 cm. Illustrative resin case.",
+    "images": [
+      "/images/pause-table-clock.svg",
+      "/images/pause-table-clock-detail.svg"
+    ],
+    "variants": [
+      {
+        "id": "chalk",
+        "label": "Chalk",
+        "colour": "#e1dfd4"
+      },
+      {
+        "id": "moss",
+        "label": "Moss",
+        "colour": "#6e785c"
+      }
+    ],
+    "stockStatus": "out-of-stock",
+    "rating": {
+      "value": null,
+      "count": 0,
+      "placeholder": true
+    },
+    "featured": false,
+    "newArrival": false,
+    "releaseOrder": 1
+  }
+]
