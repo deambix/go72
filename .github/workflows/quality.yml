@@ -21,6 +21,8 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           git ls-files "*.js" "*.cjs" | while IFS= read -r file; do node --check "$file" || exit 1; done
+      - name: Generate patched dependency lockfile in cloud
+        run: npm install --package-lock-only --ignore-scripts --no-audit --no-fund
       - name: Install build dependencies
         run: npm ci --no-audit --no-fund
       - name: Production build
