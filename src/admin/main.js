@@ -51,4 +51,4 @@ async function action(name,id){
  if(name==="backup"){const response=await request("backup"),url=URL.createObjectURL(await response.blob()),a=document.createElement("a");a.href=url;a.download="go72-data.json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);return;}
  if(name==="restore"){const file=document.getElementById("restore-file").files[0];if(!file||file.size>2*1024*1024)throw new Error("Choose a JSON backup up to 2 MB.");if(window.confirm("Replace the store content with this backup?"))await change("restore",{document:JSON.parse(await file.text()),confirm:"restore"});}
 }
-export function startAdmin(){if(!window.isSecureContext){app.textContent="Use HTTPS to access store management.";return;}window.addEventListener("pagehide",()=>{key="";});login();}
+export function startAdmin(){if(!window.isSecureContext){app.textContent="Use HTTPS to access store management.";return;}window.addEventListener("pagehide",()=>{key="";documentData=null;});window.addEventListener("pageshow",event=>{if(event.persisted)login();});login();}

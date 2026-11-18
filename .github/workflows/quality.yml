@@ -32,7 +32,12 @@ jobs:
       - name: Install cloud-only browser checks
         run: npm install --no-save --package-lock=false @playwright/test@1.65.1 axe-core@4.14.1
       - name: Install Chromium
-        run: npx playwright install --with-deps chromium
+        run: |
+          if command -v google-chrome >/dev/null 2>&1; then
+            echo "GO72_BROWSER_CHANNEL=chrome" >> "$GITHUB_ENV"
+          else
+            npx playwright install --with-deps chromium --only-shell
+          fi
       - name: Verify storefront
         run: npm run check
       - name: Upload quality report and screenshots
