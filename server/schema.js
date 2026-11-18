@@ -14,7 +14,7 @@ const unique = (items,key) => { if(new Set(items.map(x=>x[key])).size!==items.le
 const status = v => { if(!["draft","published","archived"].includes(v)) fail(); return v; };
 const httpUrl = v => {const s=text(v,2000);if(!s)return "";let u;try{u=new URL(s);}catch{fail();}if(u.protocol!=="https:"||u.username||u.password)fail();return u.href;};
 export function validateDocument(input) {
- safe(input);if(!plain(input)||JSON.stringify(input).length>MAX_DOCUMENT_BYTES)fail();
+ safe(input);if(!plain(input)||Buffer.byteLength(JSON.stringify(input))>MAX_DOCUMENT_BYTES)fail();
  const assets=list(input.assets,3000).map(a=>{const id=slug(a.id);const url=text(a.url,2000,true);if(a.kind==="local"){if(!/^\/(?:images\/[a-z0-9-]+\.svg|favicon\.svg)$/.test(url))fail();}else if(a.kind==="blob"){const u=new URL(url);if(u.protocol!=="https:"||u.username||u.password||!u.hostname.endsWith(".private.blob.vercel-storage.com")||!/^\/images\/[a-z0-9-]+\.(png|jpg|webp)$/.test(u.pathname))fail();}else fail();return {id,url,kind:a.kind,type:text(a.type,40,true),size:integer(a.size,3*1024*1024),name:text(a.name,150),uploadedAt:text(a.uploadedAt,40)};});unique(assets,"id");
  const assetIds=new Set(assets.map(a=>a.id));
  const assetId=v=>{if(v==="")return "";const id=slug(v);if(!assetIds.has(id))fail();return id;};
@@ -31,7 +31,7 @@ export function validateDocument(input) {
  const s=input.settings;if(!plain(s))fail();
  const supportEmail=text(s.supportEmail,254);if(supportEmail&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(supportEmail))fail();
  const defaultDeliveryRegionId=s.defaultDeliveryRegionId?slug(s.defaultDeliveryRegionId):"";if(defaultDeliveryRegionId&&!deliveryRegions.some(r=>r.id===defaultDeliveryRegionId))fail();
- const settings={storeName:text(s.storeName,100,true),logoAssetId:assetId(s.logoAssetId),supportEmail,announcement:text(s.announcement,500),heroHeading:text(s.heroHeading,180),heroText:text(s.heroText,800),socialLinks:list(s.socialLinks,10).map(l=>({label:text(l.label,60,true),url:httpUrl(l.url)})),defaultCurrency:currency(s.defaultCurrency),defaultDeliveryRegionId,defaultDeliveryCharge:number(s.defaultDeliveryCharge,1e6,true),defaultDeliveryEstimate:text(s.defaultDeliveryEstimate,300),returnPolicy:text(s.returnPolicy,3000)};
+ const settings={storeName:text(s.storeName,100,true),logoAssetId:assetId(s.logoAssetId),supportEmail,announcement:text(s.announcement,500),heroHeading:text(s.heroHeading,180,true),heroText:text(s.heroText,800),socialLinks:list(s.socialLinks,10).map(l=>({label:text(l.label,60,true),url:httpUrl(l.url)})),defaultCurrency:currency(s.defaultCurrency),defaultDeliveryRegionId,defaultDeliveryCharge:number(s.defaultDeliveryCharge,1e6,true),defaultDeliveryEstimate:text(s.defaultDeliveryEstimate,300),returnPolicy:text(s.returnPolicy,3000)};
  const attempts={};if(!plain(input._security)||!plain(input._security.attempts)||Object.keys(input._security.attempts).length>512)fail();
  for(const [id,a]of Object.entries(input._security.attempts)){if(!/^[a-f0-9]{64}$/.test(id))fail();attempts[id]={count:integer(a.count,10000),startedAt:integer(a.startedAt,1e15),lockedUntil:integer(a.lockedUntil,1e15)};}
  if(input.schemaVersion!==1)fail();const updatedAt=text(input.updatedAt,40,true);if(!Number.isFinite(Date.parse(updatedAt))||input.updatedBy!=="admin")fail();

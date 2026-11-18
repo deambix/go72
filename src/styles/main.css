@@ -18,3 +18,5 @@
 @media(min-width:1280px){.hero-main-image{height:530px}}
 
 .store-logo{max-height:44px;max-width:150px;object-fit:contain}.announcement{text-align:center;padding:10px 20px;background:var(--surface);color:var(--ink)}#store-links{display:flex;gap:18px;flex-wrap:wrap;font-size:12px}.cms-product-details{margin-top:24px;display:grid;gap:12px}.cms-product-details p{white-space:pre-line}.delivery-region{display:grid;gap:8px;margin:18px 0}.delivery-region select{max-width:100%;min-height:44px;border:1px solid var(--line);background:white;padding:8px}
+
+.product-meta h3,.product-information h1,.product-description,.cms-product-details,.hero-copy,.announcement,#store-links,.cart-item-details,.category-links a{overflow-wrap:anywhere}.desktop-nav{min-width:0;overflow-x:auto;white-space:nowrap}.variant-options label{max-width:100%;overflow-wrap:anywhere}

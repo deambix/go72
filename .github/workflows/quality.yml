@@ -1,13 +1,13 @@
 name: GO 72 quality
 on:
   push:
-    branches: [main, cms-private-blob]
+    branches: [main]
   pull_request:
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
-  group: go72-quality
+  group: go72-quality-${{ github.event_name }}-${{ github.ref }}
   cancel-in-progress: true
 jobs:
   storefront:
@@ -21,12 +21,10 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           git ls-files "*.js" "*.cjs" | while IFS= read -r file; do node --check "$file" || exit 1; done
-      - name: Generate dependency lockfile in cloud
-        run: npm install --package-lock-only --ignore-scripts --no-audit --no-fund
       - name: Install build dependencies
         run: npm ci --no-audit --no-fund
       - name: Production build
-        run: npm run build
+        run: node scripts/build-check.cjs
       - name: CMS contract and API checks
         run: npm run test:cms
       - name: Audit source and build
@@ -34,7 +32,12 @@ jobs:
       - name: Install cloud-only browser checks
         run: npm install --no-save --package-lock=false @playwright/test@1.65.1 axe-core@4.14.1
       - name: Install Chromium
-        run: npx playwright install --with-deps chromium
+        run: |
+          if command -v google-chrome >/dev/null 2>&1; then
+            echo "GO72_BROWSER_CHANNEL=chrome" >> "$GITHUB_ENV"
+          else
+            npx playwright install --with-deps chromium --only-shell
+          fi
       - name: Verify storefront
         run: npm run check
       - name: Upload quality report and screenshots

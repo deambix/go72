@@ -5,7 +5,7 @@ import seed from "./seed.json" with { type: "json" };
 import { validateDocument, parseJson, MAX_DOCUMENT_BYTES } from "./schema.js";
 export class ContentError extends Error { constructor(code=503){super("Content unavailable");this.status=code;} }
 function canonical(value){if(Array.isArray(value))return value.map(canonical);if(value&&typeof value==="object")return Object.fromEntries(Object.keys(value).sort().map(k=>[k,canonical(value[k])]));return value;}
-export function seal(input){const data=validateDocument(input);return {...data,checksum:createHash("sha256").update(JSON.stringify(canonical(data))).digest("hex")};}
+export function seal(input){const data=validateDocument(input);const serialized=JSON.stringify(data);for(const name of ["ADMIN_PUBLISH_KEY","BLOB_READ_WRITE_TOKEN"]){const secret=process.env[name];if(secret&&secret.length>=20&&serialized.includes(secret))throw new ContentError(400);}return {...data,checksum:createHash("sha256").update(JSON.stringify(canonical(data))).digest("hex")};}
 export function verify(input){const data=seal(input);if(typeof input.checksum!=="string"||data.checksum!==input.checksum)throw new ContentError();return data;}
 async function readStream(stream){let length=0;const chunks=[];for await(const chunk of stream){const b=Buffer.from(chunk);length+=b.length;if(length>MAX_DOCUMENT_BYTES)throw new ContentError();chunks.push(b);}return Buffer.concat(chunks).toString("utf8");}
 export function createRepository(adapter={get,put}) {

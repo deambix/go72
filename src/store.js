@@ -7,7 +7,7 @@ function limit(id,variant){const p=products.find(p=>p.id===id),v=p?.variants.fin
 export const getCart=()=>cart.map(i=>({...i}));
 export const cartCount=()=>cart.reduce((n,i)=>n+i.quantity,0);
 export function subscribe(fn){listeners.add(fn);return()=>listeners.delete(fn);}
-export function hydrateCart(next){products=next;const before=JSON.stringify(cart);cart=cart.filter(i=>limit(i.id,i.variant)>0).map(i=>({...i,quantity:clamp(i.quantity,limit(i.id,i.variant))}));if(before!==JSON.stringify(cart))save();}
+export function hydrateCart(next){products=next;const before=JSON.stringify(cart),used=new Map(),normalized=[];for(const i of cart){const p=products.find(p=>p.id===i.id),v=p?.variants.find(v=>v.id===i.variant);if(!p||!v||p.stockStatus==="out-of-stock")continue;const max=Math.max(0,Math.min(9,p.stockQuantity===null?9:p.stockQuantity-(used.get(p.id)||0),v.stockQuantity??9));if(!max)continue;const quantity=clamp(i.quantity,max);normalized.push({...i,quantity});used.set(p.id,(used.get(p.id)||0)+quantity);}cart=normalized;if(before!==JSON.stringify(cart))save();}
 export function addItem(id,variant,quantity=1){const max=limit(id,variant);if(!max)return false;const previous=cart.find(i=>i.id===id&&i.variant===variant);if(previous)previous.quantity=clamp(previous.quantity+quantity,max);else cart.push({id,variant,quantity:clamp(quantity,max)});save();return true;}
 export function setQuantity(id,variant,value){const max=limit(id,variant);if(!max)return removeItem(id,variant);cart=cart.map(i=>i.id===id&&i.variant===variant?{...i,quantity:clamp(value,max)}:i);save();}
 export function removeItem(id,variant){cart=cart.filter(i=>i.id!==id||i.variant!==variant);save();}

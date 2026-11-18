@@ -48,7 +48,7 @@ export const copy = {
   "emptySearchBody": "Try another search or clear the filters.",
   "resetFilters": "Clear filters",
   "loadErrorTitle": "Unable to load products",
-  "loadErrorBody": "Check your connection and try again.",
+  "loadErrorBody": "Store content is unavailable. Please try again shortly.",
   "retry": "Try again",
   "backToShop": "Back to shop",
   "productDetails": "Product details",

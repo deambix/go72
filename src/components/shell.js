@@ -5,4 +5,16 @@ export function updateNavigation(path) {const active=path==="/"?"home":path.star
 let toastTimer;
 export function toast(message) {const el=document.getElementById("toast");el.textContent=message;el.classList.add("visible");clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove("visible"),2600);}
 
-export function updateShell(){document.querySelectorAll(".wordmark").forEach(el=>{if(siteSettings.logo){el.innerHTML='<img class="store-logo" src="'+h(siteSettings.logo.src)+'" alt="'+h(siteSettings.storeName)+'">';}else if(siteSettings.storeName==="GO 72")el.innerHTML='GO<span>72</span>';else el.textContent=siteSettings.storeName;el.setAttribute("aria-label",siteSettings.storeName+" — Home");});const nav=document.querySelector(".desktop-nav");nav.innerHTML='<a data-link href="/catalogue">'+h(copy.shop)+'</a>'+categories.slice(1).map(c=>'<a data-link href="/category/'+h(c.slug)+'">'+h(c.name)+'</a>').join("");let announcement=document.getElementById("announcement");if(!announcement){announcement=document.createElement("p");announcement.id="announcement";announcement.className="announcement";document.querySelector(".site-header").after(announcement);}announcement.textContent=siteSettings.announcement||"";announcement.hidden=!siteSettings.announcement;let extras=document.getElementById("store-links");if(!extras){extras=document.createElement("nav");extras.id="store-links";extras.setAttribute("aria-label","Contact and social links");document.querySelector(".footer-inner").append(extras);}extras.innerHTML=(siteSettings.supportEmail?'<a href="mailto:'+h(siteSettings.supportEmail)+'">'+h(siteSettings.supportEmail)+'</a>':"")+(siteSettings.socialLinks||[]).map(l=>'<a href="'+h(l.url)+'" rel="noopener noreferrer">'+h(l.label)+'</a>').join("");}
+
+export function updateShell(){
+ document.querySelectorAll(".wordmark").forEach(el=>{
+  if(siteSettings.logo)el.innerHTML='<img class="store-logo" src="'+h(siteSettings.logo.src)+'" alt="'+h(siteSettings.storeName)+'">';
+  else if(siteSettings.storeName==="GO 72")el.innerHTML='GO<span>72</span>'+(el.closest(".site-header")?'<i aria-hidden="true"></i>':"");
+  else el.textContent=siteSettings.storeName;
+  el.setAttribute("aria-label",siteSettings.storeName+" — Home");
+ });
+ document.querySelector(".desktop-nav").innerHTML='<a data-link href="/catalogue">'+h(copy.shop)+'</a>'+categories.slice(1).map(c=>'<a data-link href="/category/'+h(c.slug)+'">'+h(c.name)+'</a>').join("");
+ let announcement=document.getElementById("announcement");if(!announcement){announcement=document.createElement("p");announcement.id="announcement";announcement.className="announcement";document.querySelector(".site-header").after(announcement);}announcement.textContent=siteSettings.announcement||"";announcement.hidden=!siteSettings.announcement;
+ const links=(siteSettings.supportEmail?'<a href="mailto:'+h(siteSettings.supportEmail)+'">'+h(siteSettings.supportEmail)+'</a>':"")+(siteSettings.socialLinks||[]).map(l=>'<a href="'+h(l.url)+'" rel="noopener noreferrer">'+h(l.label)+'</a>').join("");
+ let extras=document.getElementById("store-links");if(!links){extras?.remove();return;}if(!extras){extras=document.createElement("nav");extras.id="store-links";extras.setAttribute("aria-label","Contact and social links");document.querySelector(".footer-inner").append(extras);}extras.innerHTML=links;
+}
