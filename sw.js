@@ -1,5 +1,5 @@
 /* Public demo shell only. Bump VERSION whenever shell behavior changes. */
-const VERSION="go72-v1";
+const VERSION="go72-v2";
 const SHELL=VERSION+"-shell",STATIC=VERSION+"-static",DATA=VERSION+"-data";
 const OWN_CACHES=[SHELL,STATIC,DATA];
 const blocked=path=>/^\/(checkout|account|payment|payments|auth|api)(\/|$)/.test(path);

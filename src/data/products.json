@@ -5,7 +5,7 @@
     "price": 1290,
     "compareAtPrice": 1590,
     "category": "carry",
-    "description": "A roomy, soft-sided tote with a broad strap and an inner pocket for the small things. Sample dimensions: 36 × 38 × 10 cm. Illustrative cotton canvas.",
+    "description": "An everyday tote with wide handles and an inside pocket.",
     "images": [
       "/images/loop-canvas-tote.svg",
       "/images/loop-canvas-tote-detail.svg"
@@ -30,14 +30,24 @@
     },
     "featured": true,
     "newArrival": false,
-    "releaseOrder": 12
+    "releaseOrder": 12,
+    "details": [
+      {
+        "label": "material",
+        "value": "Canvas"
+      },
+      {
+        "label": "dimensions",
+        "value": "36 × 38 × 10 cm"
+      }
+    ]
   },
   {
     "id": "fold-zip-pouch",
     "name": "Fold zip pouch",
     "price": 590,
     "category": "carry",
-    "description": "A compact pouch for cables, keys and loose essentials. A flat base helps it sit neatly on a desk. Sample dimensions: 20 × 13 × 5 cm. Illustrative woven fabric.",
+    "description": "A zip pouch for cables, keys and small essentials.",
     "images": [
       "/images/fold-zip-pouch.svg",
       "/images/fold-zip-pouch-detail.svg"
@@ -62,14 +72,24 @@
     },
     "featured": false,
     "newArrival": true,
-    "releaseOrder": 31
+    "releaseOrder": 31,
+    "details": [
+      {
+        "label": "material",
+        "value": "Woven fabric"
+      },
+      {
+        "label": "dimensions",
+        "value": "20 × 13 × 5 cm"
+      }
+    ]
   },
   {
     "id": "dayline-notebook",
     "name": "Dayline notebook",
     "price": 390,
     "category": "desk",
-    "description": "A simple notebook with ruled pages and a soft cover. Leave it open for ideas, lists or the day’s first thought. Sample size: A5, 120 pages.",
+    "description": "A ruled notebook for notes, lists and daily plans.",
     "images": [
       "/images/dayline-notebook.svg",
       "/images/dayline-notebook-detail.svg"
@@ -94,7 +114,17 @@
     },
     "featured": false,
     "newArrival": false,
-    "releaseOrder": 10
+    "releaseOrder": 10,
+    "details": [
+      {
+        "label": "size",
+        "value": "A5"
+      },
+      {
+        "label": "pages",
+        "value": "120"
+      }
+    ]
   },
   {
     "id": "arc-desk-lamp",
@@ -102,7 +132,7 @@
     "price": 2490,
     "compareAtPrice": 2890,
     "category": "desk",
-    "description": "A curved shade and a compact base make a quiet corner of the desk. This is a visual concept; electrical specifications are not supplied. Sample height: 34 cm.",
+    "description": "A compact desk lamp with a curved shade and round base.",
     "images": [
       "/images/arc-desk-lamp.svg",
       "/images/arc-desk-lamp-detail.svg"
@@ -127,14 +157,20 @@
     },
     "featured": true,
     "newArrival": false,
-    "releaseOrder": 9
+    "releaseOrder": 9,
+    "details": [
+      {
+        "label": "height",
+        "value": "34 cm"
+      }
+    ]
   },
   {
     "id": "still-stoneware-cup",
     "name": "Still stoneware cup",
     "price": 790,
     "category": "home",
-    "description": "A low, rounded cup with an easy handle and a satin surface. Made for a moment at the kitchen table. Sample capacity: 280 ml. Illustrative ceramic.",
+    "description": "A rounded cup with an easy-to-hold handle.",
     "images": [
       "/images/still-stoneware-cup.svg",
       "/images/still-stoneware-cup-detail.svg"
@@ -159,14 +195,24 @@
     },
     "featured": true,
     "newArrival": false,
-    "releaseOrder": 8
+    "releaseOrder": 8,
+    "details": [
+      {
+        "label": "material",
+        "value": "Ceramic"
+      },
+      {
+        "label": "capacity",
+        "value": "280 ml"
+      }
+    ]
   },
   {
     "id": "landing-catchall-tray",
     "name": "Landing catchall tray",
     "price": 690,
     "category": "home",
-    "description": "A shallow tray that gives keys and everyday bits a landing place. Soft corners keep the shape understated. Sample dimensions: 22 × 14 × 2 cm. Illustrative composite.",
+    "description": "A shallow tray for keys, cards and everyday bits.",
     "images": [
       "/images/landing-catchall-tray.svg",
       "/images/landing-catchall-tray-detail.svg"
@@ -191,7 +237,13 @@
     },
     "featured": true,
     "newArrival": false,
-    "releaseOrder": 7
+    "releaseOrder": 7,
+    "details": [
+      {
+        "label": "dimensions",
+        "value": "22 × 14 × 2 cm"
+      }
+    ]
   },
   {
     "id": "roam-day-bottle",
@@ -199,7 +251,7 @@
     "price": 990,
     "compareAtPrice": 1190,
     "category": "carry",
-    "description": "A clean-lined bottle with a loop cap and an easy silhouette. A placeholder for daily carry. Sample capacity: 600 ml. Illustrative metal body; performance unverified.",
+    "description": "A slim bottle with a loop cap for everyday carry.",
     "images": [
       "/images/roam-day-bottle.svg",
       "/images/roam-day-bottle-detail.svg"
@@ -224,14 +276,20 @@
     },
     "featured": false,
     "newArrival": true,
-    "releaseOrder": 36
+    "releaseOrder": 36,
+    "details": [
+      {
+        "label": "capacity",
+        "value": "600 ml"
+      }
+    ]
   },
   {
     "id": "margin-pen-cup",
     "name": "Margin pen cup",
     "price": 490,
     "category": "desk",
-    "description": "A small upright cylinder for the desk’s most-used tools. A weighted-looking base keeps the illustration grounded. Sample height: 10 cm. Illustrative powder-coated metal.",
+    "description": "A compact holder for pens and desk tools.",
     "images": [
       "/images/margin-pen-cup.svg",
       "/images/margin-pen-cup-detail.svg"
@@ -256,14 +314,20 @@
     },
     "featured": false,
     "newArrival": false,
-    "releaseOrder": 5
+    "releaseOrder": 5,
+    "details": [
+      {
+        "label": "height",
+        "value": "10 cm"
+      }
+    ]
   },
   {
     "id": "softline-cotton-scarf",
     "name": "Softline cotton scarf",
     "price": 890,
     "category": "wear",
-    "description": "A light scarf with a fine woven pattern and a simple fringe. Fold it into a bag for a change of pace. Sample dimensions: 170 × 50 cm. Illustrative cotton.",
+    "description": "A lightweight scarf with woven lines and a fringed edge.",
     "images": [
       "/images/softline-cotton-scarf.svg",
       "/images/softline-cotton-scarf-detail.svg"
@@ -288,14 +352,24 @@
     },
     "featured": false,
     "newArrival": true,
-    "releaseOrder": 38
+    "releaseOrder": 38,
+    "details": [
+      {
+        "label": "material",
+        "value": "Cotton"
+      },
+      {
+        "label": "dimensions",
+        "value": "170 × 50 cm"
+      }
+    ]
   },
   {
     "id": "pocket-card-fold",
     "name": "Pocket card fold",
     "price": 790,
     "category": "wear",
-    "description": "A slim fold for a few cards and notes, with a curved opening on the front. Sample dimensions: 10 × 7 cm. Illustrative plant-based material; composition unverified.",
+    "description": "A slim card holder with a front pocket.",
     "images": [
       "/images/pocket-card-fold.svg",
       "/images/pocket-card-fold-detail.svg"
@@ -320,14 +394,20 @@
     },
     "featured": false,
     "newArrival": true,
-    "releaseOrder": 39
+    "releaseOrder": 39,
+    "details": [
+      {
+        "label": "dimensions",
+        "value": "10 × 7 cm"
+      }
+    ]
   },
   {
     "id": "tidy-cable-pair",
     "name": "Tidy cable pair",
     "price": 290,
     "category": "desk",
-    "description": "Two small wraps to gather charging cables between uses. A modest detail for a clearer workspace. Sample length: 12 cm each. Illustrative flexible material.",
+    "description": "Two wraps to keep charging cables together.",
     "images": [
       "/images/tidy-cable-pair.svg",
       "/images/tidy-cable-pair-detail.svg"
@@ -352,14 +432,20 @@
     },
     "featured": false,
     "newArrival": false,
-    "releaseOrder": 2
+    "releaseOrder": 2,
+    "details": [
+      {
+        "label": "dimensions",
+        "value": "12 cm each"
+      }
+    ]
   },
   {
     "id": "pause-table-clock",
     "name": "Pause table clock",
     "price": 1490,
     "category": "home",
-    "description": "A small clock face framed by a softly squared body. Keep the pace visible without a large display. Sample dimensions: 12 × 12 × 4 cm. Illustrative resin case.",
+    "description": "A small table clock with a simple face and rounded frame.",
     "images": [
       "/images/pause-table-clock.svg",
       "/images/pause-table-clock-detail.svg"
@@ -384,6 +470,12 @@
     },
     "featured": false,
     "newArrival": false,
-    "releaseOrder": 1
+    "releaseOrder": 1,
+    "details": [
+      {
+        "label": "dimensions",
+        "value": "12 × 12 × 4 cm"
+      }
+    ]
   }
 ]
