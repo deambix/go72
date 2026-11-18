@@ -6,7 +6,7 @@
   "description": "GO 72 editorial lifestyle storefront and PWA prototype",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node scripts/offline.cjs && vite build",
     "preview": "vite preview",
     "check": "node scripts/check.cjs"
   },
