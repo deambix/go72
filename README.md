@@ -51,7 +51,7 @@ It verifies filters/search/sorting, loading/empty states, variants/gallery, cart
 
 ~~~sh
 npm run build
-npm install --no-save --package-lock=false @playwright/test@1.56.1 axe-core@4.10.3
+npm install --no-save --package-lock=false @playwright/test@1.65.1 axe-core@4.14.1
 npx playwright install --with-deps chromium
 node scripts/audit.cjs
 npm run check

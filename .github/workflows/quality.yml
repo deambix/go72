@@ -11,11 +11,11 @@ concurrency:
   cancel-in-progress: true
 jobs:
   storefront:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
         with:
           node-version: 22
       - name: Check JavaScript syntax
@@ -28,21 +28,21 @@ jobs:
       - name: Audit source and build
         run: node scripts/audit.cjs
       - name: Install cloud-only browser checks
-        run: npm install --no-save --package-lock=false @playwright/test@1.56.1 axe-core@4.10.3
+        run: npm install --no-save --package-lock=false @playwright/test@1.65.1 axe-core@4.14.1
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
       - name: Verify storefront
         run: npm run check
       - name: Upload quality report and screenshots
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: go72-quality
           path: quality/
           if-no-files-found: ignore
           retention-days: 14
       - name: Upload Vercel-ready build
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: go72-dist
           path: dist/
